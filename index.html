@@ -1,12 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>coffee shop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="style.css" type="text/css" rel="stylesheet">
 </head>
+
 <body>
-    
+
+    <div class="topnav">
+        <a href="#home" class="logo">
+            <img src="photos/image1.png" alt="logo" class="brand">
+        </a>
+
+        <div id="myLInks">
+            <a href="#home" class="active1">home</a>
+            <a href="#about">about us</a>
+            <a href="#service">services</a>
+            <a href="#contact">contact us</a>
+        </div>
+
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+        </a>
+    </div>
+
+
+    <section class="contact-us">
+        <div class="container-fluid p-0">
+            <div class="row g-0">
+                <div class="col-sm-6 frame-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15701.518971480638!2d76.3369523!3d10.3114632!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b08026c4ef1c919%3A0x576cd8a7cb411d6d!2sParadise%20family%20Restaurant%20%26bake%20shop!5e0!3m2!1sen!2sin!4v1690380574233!5m2!1sen!2sin"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="col-sm-6 form-container">
+                    <h1>contact us</h1>
+                    <div class="pop" id="show">
+                        message sent successfully.we will contact you soon.
+                        <a href="javascript:void(0);" onclick="hide()" class="icon-2"><i class="fa-solid fa-xmark" style="color: #000000;"></i></a>
+                    </div>
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" name="name" id="name" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" name="email" id="email" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+                        </div>
+                        <button type="button" class="btn btn-primary" onclick="submit1()">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        function myFunction(){
+            var x = document.getElementById("myLInks");
+            if(x.style.display === "block"){
+                x.style.display = "none";
+            }else{
+                x.style.display = "block";
+            }
+        }
+        function submit1(){
+            var x = document.getElementById("show");
+            if(x.style.display === "none"){
+                x.style.display = "flex";
+            }else{
+                x.style.display = "flex";
+            }
+        }
+        function hide(){
+            var x = document.getElementById("show");
+            if(x.style.display === "flex"){
+                x.style.display = "none";
+            }else{
+                x.style.display = "none";
+            }
+        }
+    </script>
 </body>
+
 </html>
