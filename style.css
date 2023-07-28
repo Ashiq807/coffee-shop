@@ -310,6 +310,45 @@ form label{
     width: 20px !important;
     background-color: white !important;
 }
+.wrapper3{
+    background-color: #13131A;
+    padding: 100px 20px;
+}
+.wrapper3 h1{
+    text-align: center;
+}
+.menu{
+    position: relative;
+    padding: 40px;
+    border: 1px solid gray;
+    width: 65%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+.menu img{
+    width: 80px;
+    position: absolute;
+    top: 50%;
+    left: -10%;
+    transform: translate(10%, -50%);
+}
+.price{
+    color: #C7A17A;
+}
+.menu-label{
+    display: block;
+    margin: auto;
+    padding: 5px 10px;
+    background-color: #C7A17A;
+    color: white;
+    width: 150px;
+    text-align: center;
+    margin-bottom: 25px;
+}
 
 
   @media only screen and (max-width: 599px){
@@ -394,6 +433,21 @@ form label{
     .owl-dots{
         width: 100%;
     }
+    .menu{
+        width: 90%;
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: 10%;
+    }
+    .menu img{
+        width: 70px;
+        top: 50%;
+        left: -15%;
+        transform: translate(15%, -50%);
+    }
+    .text{
+        margin-left: 40px;
+    }
   }
 
   @media only screen and (min-width: 600px) {
@@ -402,16 +456,51 @@ form label{
         height: 280px;
     }
     .social a{
-        margin-left: 5px;
+        margin-left: 10px;
+    }
+    .menu{
+        width: 85%;
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: 10%;
+    }
+    .text{
+        margin-left: 50px;
+    }
+    .menu img{
+        top: 50%;
+        left: -18%;
+        transform: translate(18%, -50%);
     }
   }
-  
-  @media only screen and (min-width: 768px) {
+
+  @media only screen and (min-width: 825px){
     /* For desktop: */
     iframe{
         height: 500px;
     }
     .social a{
         margin-left: 25px;
+    }
+    .menu{
+        position: relative;
+        padding: 40px;
+        border: 1px solid gray;
+        width: 65%;
+        margin: auto;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        font-size: 15px;
+    }
+    .menu img{
+        width: 80px;
+        position: absolute;
+        top: 50%;
+        left: -10%;
+        transform: translate(10%, -50%);
+    }
+    .text{
+        margin-left: 0px;
     }
   }
