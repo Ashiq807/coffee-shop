@@ -178,6 +178,11 @@ form label{
 .address img{
     display: inline-block;
 }
+.address > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .subcribe{
     background-color: #D3AD7F;
 }
@@ -192,6 +197,9 @@ form label{
 .footer-text img{
     display: block;
     margin-bottom: 20px;
+}
+.social{
+    display: flex;
 }
 .social a{
     font-size: 25px;
@@ -221,6 +229,88 @@ form label{
     font-size: 12px;
     margin-bottom: 20px;
 }
+.owl-carousel{
+    position: relative;
+    z-index: 0;
+    background-image: url(photos/image14.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+}
+.item{
+    height: 400px;
+    position: relative;
+    background-size: cover;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.item-1{
+    background-image: url(photos/image15.jpg);
+}
+.item-2{
+    background-image: url(photos/image16.jpg);
+}
+.item-3{
+    background-image: url(photos/image17.jpg);
+}
+.item div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.shape-2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.719);
+}
+.owl-prev,.owl-next{
+    position: absolute;
+}
+.owl-prev span,.owl-next span{
+    background-color: rgba(0, 0, 0, 0.815);
+    color: white;
+    padding: 15px 20px;
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.owl-prev{
+    top: 50%;
+    left: 0;
+    transform: translate(0%, -50%);
+}
+.owl-next{
+    top: 50%;
+    right: 0;
+    transform: translate(0%, -50%);
+}
+.owl-dots{
+    background-color: #C7A17A;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 15%;
+    margin: auto;
+    padding: 8px;
+    margin-top: 15px;
+}
+.owl-dot span{
+    display: block !important;
+    background-color: black !important;
+}
+.owl-dot.active span{
+    width: 20px !important;
+    background-color: white !important;
+}
+
 
   @media only screen and (max-width: 599px){
     /* For mobile phones: */
@@ -277,6 +367,9 @@ form label{
         margin-top: 0;
         justify-content: flex-start;
     }
+    .address > div{
+        justify-content: flex-start;
+    }
     .address > *{
         margin-top: 25px;
     }
@@ -298,6 +391,9 @@ form label{
     .content-2 p{
         width: 100%;
     }
+    .owl-dots{
+        width: 100%;
+    }
   }
 
   @media only screen and (min-width: 600px) {
@@ -305,11 +401,17 @@ form label{
     iframe{
         height: 280px;
     }
+    .social a{
+        margin-left: 5px;
+    }
   }
   
   @media only screen and (min-width: 768px) {
     /* For desktop: */
     iframe{
         height: 500px;
+    }
+    .social a{
+        margin-left: 25px;
     }
   }
