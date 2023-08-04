@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+    -webkit-box-sizing: border-box;
     margin: 0;
     padding: 0;
     color: white;
@@ -9,6 +10,7 @@ body{
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
+
 }
 .topnav{
     background-color: black;
@@ -23,7 +25,7 @@ body{
     text-transform: capitalize;
     position: sticky;
     top: 0;
-    z-index: 1;
+    z-index: 2;
 }
 #myLInks a{
     text-decoration: none;
